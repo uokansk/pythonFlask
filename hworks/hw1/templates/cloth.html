@@ -1,0 +1,35 @@
+{% extends 'base_shop.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<div>
+    <h2 align="center">Одежда</h2>
+    <div>
+
+    <table align="center" border="2" width="75%">
+        <thead>
+        <tr>
+            <th width="33%">Время года</th>
+            <th width="33%">Одежда</th>
+            <th width="34%">цена</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for clo in cloth %}
+
+        <tr align="center">
+            <td>{{ clo.type }}</td>
+            <td>{{ clo.name }}</td>
+            <td>{{ clo.price }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+
+
+</div>
+{% endblock %}

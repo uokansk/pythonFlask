@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+{% for new in news %}
+            <h1>{{ new.header }}</h1>
+            <p>{{ new.short_text }}</p>
+            <p>{{ new.data_news }}</p>
+
+{% endfor %}
+
+</body>
+<footer>
+    <p>Все права защищены &copy;</p>
+</footer>
+</html>

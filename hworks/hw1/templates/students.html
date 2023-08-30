@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Студенты<</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+<h1 align="center">Студенты</h1>
+<p align="center">Привет, Студенты! Студенты! Студенты! Студенты!</p>
+<p>
+<div>
+
+    <table align="center" border="2" width="75%">
+        <thead>
+        <tr>
+            <th width="25%">Имя</th>
+            <th width="25%">Фамилия</th>
+            <th width="25%">Возраст</th>
+            <th width="25%">Средний балл</th>
+        </tr>
+        </thead>
+        {% for student in students %}
+        <tbody>
+
+        <tr align="center">
+            <td>{{ student.family }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td><b>{{ student.average_score }}</b></td>
+        </tr>
+
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+</p>
+<p>Все права защищены &copy;</p>
+
+</body>
+</html>

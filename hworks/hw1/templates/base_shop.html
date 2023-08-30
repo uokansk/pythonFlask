@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Мой сайт
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div>
+    <ul>
+        <li><a href="/shop/">Магазин</a></li>
+        <li><a href="/cloth/">Одежда</a></li>
+        <li><a href="/shoes/">Обувь</a></li>
+        <li><a href="/jacket/">Куртка</a></li>
+    </ul>
+    {% block content %}
+    Страница не заполнена
+    {% endblock %}
+    <div>
+        <hr>
+        <p>Все права защищены &copy;</p>
+    </div>
+</div>
+
+</body>
+</html>
