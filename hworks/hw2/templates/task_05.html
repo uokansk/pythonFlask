@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Скока буков</h1>
+    <form action="/calc" method="post">
+        <input type="text" name="num_a" placeholder="число А">
+        <select id="operation" name="operation">
+            <option value="-">-</option>
+            <option value="+">+</option>
+            <option value="*">x</option>
+            <option value="/">%</option>
+        </select>
+        <input type="text" name="num_b" placeholder="число В"><br><br>
+        <input type="submit" value="Равно">
+    </form>
+
+</div>
+{% endblock %}

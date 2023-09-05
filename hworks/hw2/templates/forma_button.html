@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+POST запрос
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <form action="/submit" method="post">
+        <input type="text" name="name" placeholder="Введи Имя">
+        <input type="submit" value="Нажми меня">
+    </form>
+</div>
+    {% endblock %}

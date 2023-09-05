@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Скока буков</h1>
+    <form action="/letters" method="post">
+        <textarea name="text" placeholder="введи текст" rows="5" cols="30"></textarea><br><br>
+<!--        <input type="text" name="text" placeholder="введи текст"><br><br>-->
+        <input type="submit" value="Отправить">
+    </form>
+
+</div>
+{% endblock %}
