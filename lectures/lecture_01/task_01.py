@@ -14,4 +14,4 @@ if __name__ == '__main__':
 
 
 # Для запуска через консоль  PS C:\Users\kapa-\PycharmProjects\pythonFlask>
-# flask --app .\lecture_01\task_01.py run
+# flask --app .\lecture_01\main.py run

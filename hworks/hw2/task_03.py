@@ -49,7 +49,7 @@ def enter():
         password = request.form.get('password')
         if login == verification['login'] and password == verification['password']:
             return f"Вход {escape(login)} выполнен"
-    return render_template('task_03.html', **context)
+    return render_template('task4.html', **context)
 
 
 if __name__ == '__main__':
