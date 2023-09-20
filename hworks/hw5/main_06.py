@@ -81,7 +81,7 @@ async def update_user(user_id: int, new_user: UserIn):
 @app.delete("/users/", response_class=HTMLResponse)
 async def delete_user(request: Request, user_id: int):
     for user in users:
-        if users[i].id == user_id:
+        if user.id == user_id:
             users.remove(user)
             break
     return templates.TemplateResponse("users.html", {"request": request, "users": users})
